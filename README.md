@@ -1,6 +1,6 @@
-<h1 align="center"> Galactic Age Caculator </h1>
+<h1 align="center">Bacon Ipsum</h1>
 
-<p align="center">An Application to caculate age on varies planets</p>
+<p align="center">A fun game application called Build a flower with bacon words</p>
 
 
 ## Setup/Installation Requirements
@@ -12,7 +12,7 @@ To clone and run this application, you'll need Git and Node, Npm installed on yo
 $ git clone https://github.com/epicodus-a/galactic-age-caculator.git
 
 // Go into the repository
-$ cd galactic-age-caculator
+/*$ cd galactic-age-caculator*/
 
 // Install dependencies
 $ npm install
@@ -21,21 +21,15 @@ $ npm install
 $ npm start
 ```
 
-## Specifications
+**BDD Breakdown**
 
-- Behaviour: Calcs age, netxt birthday, years to have fun on each planet correctly.
-  - Input: "Adriana, 2/24/2018, 10"
-  - Output: "Adriana, on earth"
-            "0, 3/23/2019, 10"
-            "Adriana, On Venus"
-            "0, 11/5/2018, 7"...
-
-- Behaviour: Calcs age, netxt birthday, years to have fun on each planet correctly.
-  - Input: "Adriana, 1/1/1900, 50"
-  - Output: "Adriana, on earth"
-            "119, 11/31/2018, 69"
-            "Adriana, On Venus"
-            "74, 8/26/2018, 43"...
+Behavior | Input | Ouput
+------------ | ------------- | -------------
+Check to see if haiku has three lines | haiku example | true
+Check to see if first line has 5 syllables | haiku example | true
+Check to see if second line has 7 syllables | haiku example | true
+Check to see if third line has 5 syllables | haiku example | true
+Check if haiku obeys the syllable rules | haiku example | true
 
 
 ## Known Bugs

@@ -2,51 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>tamagotchi</title>
+    <title>Meaty Ipsum</title>
   </head>
   <body>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-4 offset-4" >
-          <div class="row my-4">
-            <div class="img-spot img-fluid">
-            </div>
-          </div>
-
-          <div id="game-controls" class="row ml-4" >
-            <button id="eat" class="btn btn-success mb-3 col-3" type="button">Eat!</button>
-            <button id="sleep" class="btn btn-success mb-3 col-3" type="button">Sleep!</button>
-            <button id="playVideoGame" class="btn btn-success mb-3 col-3" type="button">Play!</button>
-            <button id="tv" class="btn btn-success mb-3 col-3" type="button">Watch TV!</button>
-          </div>
-
-          <div class="row">
-            <div class="output text-center mt-5">
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5">
-      <form id="weatherLocation">
-        <input type="text" name="city" class="form-control form-group" placeholder="enter a city" required>
-        <input type="text" name="state" class="form-control form-group" placeholder="enter state in full" required>
-        <button type="submit" name="button" class="btn btn-outline-warning form-control">show me the weather</button>
+    <div class="container">
+      <form id="formOne">
+        <label for="guess">Submit your guess!</label>
+        <input id="guess" type="text" name="guess">
+        <button class="submit" type="submit" name="submit"></button>
       </form>
-      <div class="showHumidity mt-4">
-
-      </div>
-      <div class="showTemp mt-4">
-
-      </div>
-      <div class="error mt-4">
-
+      <div id="output">
+      <p></p>
       </div>
     </div>
-
-
-
   </body>
 </html>
