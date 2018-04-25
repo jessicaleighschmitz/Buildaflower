@@ -23,11 +23,12 @@ class Api {
     console.log("hello", words);
     return words;
   }
-  pickWord(){
-    let word = makeIntoWordArray();
-    console.log("dhgsjkdhgs", word)
-    return word[Math.floor(Math.random() * word.length)];
 
-  }
+  // pickWord(response){
+  //   let word = this.makeIntoWordArray(response);
+  //   console.log("dhgsjkdhgs", word)
+  //   return word[Math.floor(Math.random() * word.length)];
+  // }
+
 }
 export {Api};
