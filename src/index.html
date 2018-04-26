@@ -5,12 +5,19 @@
     <title>Meaty Ipsum</title>
   </head>
   <body>
+    <div id="header">
+      <h1>Build-a-Flower!</h2>
+        <p id='intro'>Enter a letter to see if you reveal the secret word.</p>
+    </div>
     <div class="container">
       <form id="formOne">
-        <label for="guess">Submit your guess!</label>
-        <input id="guess" type="text" name="guess">
-        <button class="submit" type="submit" name="submit"></button>
+        <button id="playButton" type="submit" name="play">Play!</button>
       </form>
+      <div id="guessOne">
+        <label for="guess">Guess:!</label>
+        <input id="guess" type="text" name="guess">
+        <button id= "guessButton" name="guess">Choose a Letter!</button>
+      </div>
       <div id="output">
       <p></p>
       </div>

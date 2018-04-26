@@ -8,40 +8,49 @@ $(document).ready(function(){
     event.preventDefault();
     let api = new Api();
     let promise = api.makeApiCall();
-    let guess = $('input#guess').val();
-    console.log(guess);
+    let guess = 'a';
+    let counter = 10;
+
 
     promise.then(function(response){
       let wordArr = api.makeIntoWordArray(response);
       let item = api.pickWord(response);
-      console.log(item);
-      let counter = api.
+      let hiddenLetters = api.getLetters(response);
+      console.log("heyyyy", hiddenLetters);
       // showResults(wordArr);
       let body = JSON.parse(wordArr);
-      $("#output").html(response);
-    }, function(error){
-      $("#output").text('There was an error processing your request. Try again.');
+      // let output = '';
+      for(let i = 0; i < hiddenLetters.length; i++) {
+        $("#output").append(`<p class='position${i} id='space${i}'></p>`);
+      }
+
+      for(let i = 0; i < hiddenLetters.length; i++) {
+
+        if(hiddenLetters[i] === guess) {
+          $(`.position${[i]}`).html(hiddenLetters[i]);
+        } else {
+          // counter --;
+          console.log("earth", counter);
+        }
+      }
+
+
+
+      // $('#guessButton').click(function(){
+      //   console.log("dog");
+      //    function correctGuess(){
+      //      for(let i = 0; i > 4; i++){
+      //       console.log("y");
+      //       if(hiddenLetters[i] === guess) {
+      //         $(".position"+[i]+"").html(hiddenLetters[i]);
+      //       } else {
+      //         counter --;
+      //         console.log(counter);
+      //       }
+      //       return guesses;
+      //     }
+      //   }
+      //   }
+      });
     });
-
-
-
-  })
-})
-//make a counter function
-getLength(response){
-  let letter = this.pickWord(response);
-  let letters = letter.split("");
-  for(var i = 0; i < letters.length; i++) {
-    $("p").append("<span></span>")
-  if(guess === letters.position[i]) {
-    $('span').html(i);
-  } else {
-    api.counter --;
-  }
-  }
-}
-// function showResults(words){
-//   for(let i = 0; i < word.length; i++) {
-//     $("p")append("<span></span>")
-//   }
-// }
+  });

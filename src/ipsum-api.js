@@ -24,11 +24,15 @@ class Api {
     return words;
   }
 
-  // pickWord(response){
-  //   let word = this.makeIntoWordArray(response);
-  //   console.log("dhgsjkdhgs", word)
-  //   return word[Math.floor(Math.random() * word.length)];
-  // }
-
+  pickWord(response){
+    let word = this.makeIntoWordArray(response);
+    console.log("dhgsjkdhgs", word)
+    return word[Math.floor(Math.random() * word.length)];
+  }
+  getLetters(response){
+    let letter = this.pickWord(response);
+    let letters = letter.split("");
+    return letters;
+  }
 }
 export {Api};
